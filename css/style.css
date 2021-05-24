@@ -1,0 +1,126 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-wrapper{
+  background: green;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 5px; */
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+.logo-container{
+  margin-left: 1em;
+}
+nav{
+  margin-right: 1em;
+}
+.nav-wrapper li a{
+  text-decoration: none;
+  color: powderblue;
+}
+.nav-wrapper li{
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+}
+.nav-item{
+  padding: 1em 2em;
+}
+.nav-item:hover{
+  background-color: orange;
+}
+.pop-category{
+  text-align: center;
+}
+.product-section{
+  max-width: 50%;
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin: auto;
+  animation-name: product-animation;
+  animation-duration: 2s;
+}
+@keyframes product-animation {
+  0% {top: 500px};
+  100% {top: 50px}
+}
+.product-item{
+  background-color: green;
+  text-align: center;
+  padding: 5px;
+  margin: 25px;;
+}
+.product-item img{
+  margin-bottom: 10px;
+  border-radius: 2%;
+}
+.btn-container{
+  background-color: transparent;
+  padding: inherit;
+}
+.btn-container input{
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  position: relative;
+  width: 100%
+}
+.btn-container input:hover{
+  background-color: orange;
+}
+.contact-section{
+  position: relative;
+}
+.contact-form-container{
+  background: green;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  bottom: -280px;
+  position: fixed;
+  right: 0;
+  transition: .5s;
+  width: 330px;
+}
+.contact-header{
+display: flex;
+justify-content: center;
+}
+.contact-header img{
+  width: 45px;
+  margin:5px;
+}
+.contact-form{
+  padding: 5px;
+}
+.contact-form-container:hover{
+  bottom: 0;
+}
+
+.social-section{
+  background-color: black;
+  position:absolute;
+  top:40%;
+  right: 0;
+  padding: inherit;
+
+}
+.facebook-icon{
+  background-color: royalblue;
+  transition: all .5s;
+
+}
+.facebook-icon:hover{
+  left:100px;
+}
+.footer-section{
+  background-color: green;
+  padding: 5px;
+  text-align: center;
+}
